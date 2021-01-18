@@ -23,6 +23,9 @@
             </router-link>
           </div>
         </div>
+        <div>
+          <router-link :to="{ name: 'about' }" class="about">About</router-link>
+        </div>
       </nav>
     </nav>
   </header>
@@ -44,3 +47,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.about {
+  margin-right: 15px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 600;
+}
+</style>
